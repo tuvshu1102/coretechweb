@@ -1,5 +1,6 @@
 "use client";
 
+import { Suspense } from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -26,13 +27,14 @@ export default function Home() {
     }
   };
   return (
-    <main className="h-[4560px] w-full bg-[#121212] m-0 p-0 relative flex items-center flex-col scroll-smooth ">
-      <div className="absolute z-1 top-[650px] left-[30px] h-[107px] w-[20%] bg-[#5a807c] blur-[100px] rounded-[40%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
-      <div className="absolute z-1 top-[1650px] left-[30px] h-[147px] w-[23%] bg-[#5a807c] blur-[200px] rounded-[30%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
-      <div className="absolute z-1 top-[1000px] right-[-20px] h-[107px] w-[10%] bg-[#5a807c] blur-[200px] rounded-full shadow-[0px_0px_100px_140px_#5a807c]"></div>
-      <div className="absolute z-1 top-[2200px] left-[30px] h-[107px] w-[10%] bg-[#5a807c] blur-[200px] rounded-[40%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
-      <div className="absolute z-1 top-[1900px] right-[-30px] h-[27px] w-[3%] bg-[#ef5239] blur-[200px] rounded-[40%] shadow-[0px_0px_100px_140px_#ef5239]"></div>
-      {/* <div className="h-[78px] w-full fixed bg-head1 flex justify-around items-center text-white z-50 scroll-smooth">
+    <Suspense fallback={<>Loading...</>}>
+      <main className="h-[4560px] w-full bg-[#121212] m-0 p-0 relative flex items-center flex-col scroll-smooth ">
+        <div className="absolute z-1 top-[650px] left-[30px] h-[107px] w-[20%] bg-[#5a807c] blur-[100px] rounded-[40%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
+        <div className="absolute z-1 top-[1650px] left-[30px] h-[147px] w-[23%] bg-[#5a807c] blur-[200px] rounded-[30%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
+        <div className="absolute z-1 top-[1000px] right-[-20px] h-[107px] w-[10%] bg-[#5a807c] blur-[200px] rounded-full shadow-[0px_0px_100px_140px_#5a807c]"></div>
+        <div className="absolute z-1 top-[2200px] left-[30px] h-[107px] w-[10%] bg-[#5a807c] blur-[200px] rounded-[40%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
+        <div className="absolute z-1 top-[1900px] right-[-30px] h-[27px] w-[3%] bg-[#ef5239] blur-[200px] rounded-[40%] shadow-[0px_0px_100px_140px_#ef5239]"></div>
+        {/* <div className="h-[78px] w-full fixed bg-head1 flex justify-around items-center text-white z-50 scroll-smooth">
         <div
           className="h-full w-[20%] justify-center items-center flex"
           href="/"
@@ -188,13 +190,14 @@ export default function Home() {
           )}
         </div>
       </div> */}
-      <Nav />
-      <Top id="top" />
-      <Info id="info" />
-      <Six id="six" />
-      <Quote />
-      <Data id="data" />
-      <Footer id="contact" />
-    </main>
+        <Nav />
+        <Top id="top" />
+        <Info id="info" />
+        <Six id="six" />
+        <Quote />
+        <Data id="data" />
+        <Footer id="contact" />
+      </main>
+    </Suspense>
   );
 }
