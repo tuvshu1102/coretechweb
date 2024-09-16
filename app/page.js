@@ -52,33 +52,13 @@ export default function Home() {
         <div className="absolute z-1 top-[1000px] right-[-20px] h-[107px] w-[10%] bg-[#5a807c] blur-[200px] rounded-full shadow-[0px_0px_100px_140px_#5a807c]"></div>
         <div className="absolute z-1 top-[2200px] left-[30px] h-[107px] w-[10%] bg-[#5a807c] blur-[200px] rounded-[40%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
         <div className="absolute z-1 top-[1900px] right-[-30px] h-[27px] w-[3%] bg-[#ef5239] blur-[200px] rounded-[40%] shadow-[0px_0px_100px_140px_#ef5239]"></div>
-        <Nav isOpen={isModalOpen} closeModal={() => setIsModalOpen(false)} />
-        <Top
-          id="top"
-          isOpen={isModalOpen}
-          closeModal={() => setIsModalOpen(false)}
-        />
-        <Info
-          id="info"
-          isOpen={isModalOpen}
-          closeModal={() => setIsModalOpen(false)}
-        />
-        <Six
-          id="six"
-          isOpen={isModalOpen}
-          closeModal={() => setIsModalOpen(false)}
-        />
-        <Quote isOpen={isModalOpen} closeModal={() => setIsModalOpen(false)} />
-        <Data
-          id="data"
-          isOpen={isModalOpen}
-          closeModal={() => setIsModalOpen(false)}
-        />
-        <Footer
-          id="contact"
-          isOpen={isModalOpen}
-          closeModal={() => setIsModalOpen(false)}
-        />
+        <Nav />
+        <Top id="top" />
+        <Info id="info" />
+        <Six id="six" />
+        <Quote />
+        <Data id="data" />
+        <Footer id="contact" />
       </main>
     </Suspense>
   );
