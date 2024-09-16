@@ -1,113 +1,200 @@
+"use client";
+
+import { useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Nav from "/components/nav.js";
+import Navbar from "/components/navbar.js";
+import Top from "/components/top.js";
+import Info from "/components/info.js";
+import Data from "/components/data.js";
+import Quote from "/components/quote.js";
+import Six from "/components/six.js";
+import Footer from "/components/footer.js";
+import Link from "next/link";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+  const scrollToSection = (path) => {
+    const element = document.querySelector(path);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="h-[4560px] w-full bg-[#121212] m-0 p-0 relative flex items-center flex-col scroll-smooth ">
+      <div className="absolute z-1 top-[650px] left-[30px] h-[107px] w-[20%] bg-[#5a807c] blur-[100px] rounded-[40%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
+      <div className="absolute z-1 top-[1650px] left-[30px] h-[147px] w-[23%] bg-[#5a807c] blur-[200px] rounded-[30%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
+      <div className="absolute z-1 top-[1000px] right-[-20px] h-[107px] w-[10%] bg-[#5a807c] blur-[200px] rounded-full shadow-[0px_0px_100px_140px_#5a807c]"></div>
+      <div className="absolute z-1 top-[2200px] left-[30px] h-[107px] w-[10%] bg-[#5a807c] blur-[200px] rounded-[40%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
+      <div className="absolute z-1 top-[1900px] right-[-30px] h-[27px] w-[3%] bg-[#ef5239] blur-[200px] rounded-[40%] shadow-[0px_0px_100px_140px_#ef5239]"></div>
+      {/* <div className="h-[78px] w-full fixed bg-head1 flex justify-around items-center text-white z-50 scroll-smooth">
+        <div
+          className="h-full w-[20%] justify-center items-center flex"
+          href="/"
+          onClick={(e) => {
+            e.preventDefault();
+            scrollToSection("#top");
+          }}
+        >
+          <Image
+            src="/logo.svg"
+            width={178}
+            height={78}
+            className="cursor-pointer"
+          />
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <div className="sm:flex w-[60%] h-full justify-between hidden">
+          <div className="h-full w-[45%] justify-around items-center flex">
+            <Link
+              className="w-1/3 h-full hover:font-bold font-light flex justify-center items-center duration-150"
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("#top");
+              }}
+            >
+              Нүүр
+            </Link>
+            <Link
+              className="w-1/3 h-full hover:font-bold font-light flex justify-center items-center duration-150"
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("#info");
+              }}
+            >
+              Үйлчилгээ
+            </Link>
+            <Link
+              className="w-1/3 h-full hover:font-bold font-light flex justify-center items-center duration-150"
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("#data");
+              }}
+            >
+              БигДата үйлчилгээ
+            </Link>
+          </div>
+          <div className="w-[35%] h-full flex justify-center items-center">
+            <Link
+              className="w-full h-full flex justify-center items-center"
+              href="/"
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection("#contact");
+              }}
+            >
+              <button className="border-solid h-[70%] w-[70%] bg-transparent border-[#EF5239] border-2 rounded-3xl flex justify-center items-center">
+                <p className="font-medium mr-4">Бидэнтэй холбогдох</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-6 rotate-[-45deg]"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                  />
+                </svg>
+              </button>
+            </Link>
+          </div>
+        </div>
+        <div className="absolute inset-y-0 right-0 flex items-center sm:hidden mr-5">
+          <button
+            onClick={toggleMenu}
+            className=" p-2 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu"
+            aria-expanded={isOpen}
+          >
+            <span className="sr-only">Open main menu</span>
+            {isOpen ? (
+              <svg
+                className="block h-6 w-6 text-[#F27360]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                className="block h-6 w-6 text-[#F27360]"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
+          </button>
+          {isOpen && (
+            <motion.div
+              initial={{ height: 0 }}
+              animate={{ height: "auto" }}
+              transition={{ duration: 0.3 }}
+              className="sm:hidden absolute"
+              id="mobile-menu"
+            >
+              <div className="px-2 pt-2 pb-3 space-y-1">
+                <Link
+                  href="/"
+                  className="text-gray-300 items-center flex justify-center hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Нүүр
+                </Link>
+                <Link
+                  href="/"
+                  className="text-gray-300 items-center flex justify-center hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Үйлчилгээ
+                </Link>
+                <Link
+                  href="/"
+                  className="text-gray-300 items-center flex justify-center hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                >
+                  БигДата үйлчилгээ
+                </Link>
+                <Link
+                  href="/"
+                  className="text-gray-300 items-center flex justify-center hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Бидэнтэй холбогдох
+                </Link>
+              </div>
+            </motion.div>
+          )}
+        </div>
+      </div> */}
+      <Nav />
+      <Top id="top" />
+      <Info id="info" />
+      <Six id="six" />
+      <Quote />
+      <Data id="data" />
+      <Footer id="contact" />
     </main>
   );
 }
