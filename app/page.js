@@ -2,16 +2,29 @@
 
 import { Suspense } from "react";
 import { useState } from "react";
-import Nav from "@/components/nav.js";
-import Top from "@/components/top.js";
-import Info from "@/components/info.js";
-import Data from "@/components/data.js";
-import Quote from "@/components/quote.js";
-import Six from "@/components/six.js";
-import Footer from "@/components/footer.js";
 import dynamic from "next/dynamic";
 
-const DynamicComponentWithNoSSR = dynamic(() => import("../components/data"), {
+const Data = dynamic(() => import("../components/data"), {
+  ssr: false,
+});
+
+const Nav = dynamic(() => import("../components/nav"), {
+  ssr: false,
+});
+
+const Top = dynamic(() => import("../components/top"), {
+  ssr: false,
+});
+
+const Info = dynamic(() => import("../components/info"), {
+  ssr: false,
+});
+
+const Quote = dynamic(() => import("../components/quote"), {
+  ssr: false,
+});
+
+const Six = dynamic(() => import("../components/six"), {
   ssr: false,
 });
 
@@ -35,13 +48,33 @@ export default function Home() {
         <div className="absolute z-1 top-[1000px] right-[-20px] h-[107px] w-[10%] bg-[#5a807c] blur-[200px] rounded-full shadow-[0px_0px_100px_140px_#5a807c]"></div>
         <div className="absolute z-1 top-[2200px] left-[30px] h-[107px] w-[10%] bg-[#5a807c] blur-[200px] rounded-[40%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
         <div className="absolute z-1 top-[1900px] right-[-30px] h-[27px] w-[3%] bg-[#ef5239] blur-[200px] rounded-[40%] shadow-[0px_0px_100px_140px_#ef5239]"></div>
-        <Nav />
-        <Top id="top" />
-        <Info id="info" />
-        <Six id="six" />
-        <Quote />
-        <Data id="data" />
-        <Footer id="contact" />
+        <Nav isOpen={isModalOpen} closeModal={() => setIsModalOpen(false)} />
+        <Top
+          id="top"
+          isOpen={isModalOpen}
+          closeModal={() => setIsModalOpen(false)}
+        />
+        <Info
+          id="info"
+          isOpen={isModalOpen}
+          closeModal={() => setIsModalOpen(false)}
+        />
+        <Six
+          id="six"
+          isOpen={isModalOpen}
+          closeModal={() => setIsModalOpen(false)}
+        />
+        <Quote isOpen={isModalOpen} closeModal={() => setIsModalOpen(false)} />
+        <Data
+          id="data"
+          isOpen={isModalOpen}
+          closeModal={() => setIsModalOpen(false)}
+        />
+        <Footer
+          id="contact"
+          isOpen={isModalOpen}
+          closeModal={() => setIsModalOpen(false)}
+        />
       </main>
     </Suspense>
   );
