@@ -1,6 +1,9 @@
+("use client"); // This is a client component 👈🏽
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { useSearchParams } from "next/navigation";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,6 +13,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const [state, setState] = useState("");
   const searchParams = useSearchParams();
   return (
     <html lang="en">
