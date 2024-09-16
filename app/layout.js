@@ -1,9 +1,10 @@
-("use client"); // This is a client component 👈🏽
+"use client"; // This is a client component 👈🏽
+
+import { useState } from "react";
 
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { useSearchParams } from "next/navigation";
-import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
