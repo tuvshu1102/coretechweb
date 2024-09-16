@@ -9,11 +9,6 @@ import Data from "/components/data.js";
 import Quote from "/components/quote.js";
 import Six from "/components/six.js";
 import Footer from "/components/footer.js";
-import dynamic from "next/dynamic";
-
-const DynamicComponentWithNoSSR = dynamic(() => import("../components/List"), {
-  ssr: false,
-});
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
