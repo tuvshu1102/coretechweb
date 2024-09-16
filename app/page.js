@@ -5,7 +5,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Nav from "/components/nav.js";
-import Navbar from "/components/navbar.js";
 import Top from "/components/top.js";
 import Info from "/components/info.js";
 import Data from "/components/data.js";
