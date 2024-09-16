@@ -2,13 +2,13 @@
 
 import { Suspense } from "react";
 import { useState } from "react";
-import Nav from "/components/nav.js";
-import Top from "/components/top.js";
-import Info from "/components/info.js";
-import Data from "/components/data.js";
-import Quote from "/components/quote.js";
-import Six from "/components/six.js";
-import Footer from "/components/footer.js";
+import Nav from "@/components/nav.js";
+import Top from "@/components/top.js";
+import Info from "@/components/info.js";
+import Data from "@/components/data.js";
+import Quote from "@/components/quote.js";
+import Six from "@/components/six.js";
+import Footer from "@/components/footer.js";
 import dynamic from "next/dynamic";
 
 const DynamicComponentWithNoSSR = dynamic(() => import("../components/data"), {
