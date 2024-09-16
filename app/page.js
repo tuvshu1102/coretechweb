@@ -28,6 +28,10 @@ const Six = dynamic(() => import("../components/six"), {
   ssr: false,
 });
 
+const Footer = dynamic(() => import("../components/footer"), {
+  ssr: false,
+});
+
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
 
