@@ -11,7 +11,7 @@ import Six from "/components/six.js";
 import Footer from "/components/footer.js";
 import dynamic from "next/dynamic";
 
-const DynamicComponentWithNoSSR = dynamic(() => import("../components"), {
+const DynamicComponentWithNoSSR = dynamic(() => import("../components/data"), {
   ssr: false,
 });
 
