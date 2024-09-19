@@ -94,7 +94,7 @@ export default function Home() {
         </div>
         <div
           className="absolute w-[70px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  hidden md:block"
-          style={{ animationDelay: `calc(15s / 8 * (8 - 8) * -1)` }}
+          style={{ animationDelay: `calc(30s / 8 * (8 - 8) * -1)` }}
         >
           <Image
             alt="coretech"
@@ -105,7 +105,7 @@ export default function Home() {
         </div>
         <div
           className="absolute w-[50px] ml-10 h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden"
-          style={{ animationDelay: `calc(15s / 4 * (4 - 1) * -1)` }}
+          style={{ animationDelay: `calc(30s / 4 * (4 - 1) * -1)` }}
         >
           <Image
             alt="coretech"
@@ -116,7 +116,7 @@ export default function Home() {
         </div>
         <div
           className="absolute w-[70px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden"
-          style={{ animationDelay: `calc(15s / 4 * (4 - 2) * -1)` }}
+          style={{ animationDelay: `calc(30s / 4 * (4 - 2) * -1)` }}
         >
           <Image
             alt="coretech"
@@ -127,7 +127,7 @@ export default function Home() {
         </div>
         <div
           className="absolute w-[100px] h-[63px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden"
-          style={{ animationDelay: `calc(15s / 4 * (4 - 3) * -1)` }}
+          style={{ animationDelay: `calc(30s / 4 * (4 - 3) * -1)` }}
         >
           <Image
             alt="coretech"
