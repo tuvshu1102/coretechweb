@@ -183,7 +183,7 @@ const Navbar = () => {
                 class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center border-solid bg-transparent border-[#EF5239] border-2"
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToSection("#contact");
+                  scrollToSection("#contactt");
                   setTimeout(() => {
                     closeMenu();
                   }, 1000);

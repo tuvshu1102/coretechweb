@@ -237,7 +237,7 @@ export default function Home() {
       </div>
       <div
         className="h-auto w-full bg-[#1A1A1A66] mt-[120px] md:hidden block"
-        id="contact"
+        id="contactt"
       >
         <div className="h-auto w-full border-t border-b border-[#5A807C] py-6">
           <span className="bg-head3 text-transparent bg-clip-text w-11/12 md:w-3/4 lg:w-1/2 mx-auto flex justify-center flex-col text-center">
