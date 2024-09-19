@@ -29,10 +29,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="h-[370px] w-[67%] mt-[-72px] z-0 rounded-[50px] border-t-[1px] border-[#EF5941CC] border-x-[2px] flex justify-center">
+      <div className="h-[370px]   w-[67%] mt-[-72px] z-0 rounded-[50px] border-t-[1px] border-[#EF5941CC] border-x-[2px] hidden md:flex justify-center">
         <div className="h-[200px] w-[2px] bg-[#EF5941CC]"></div>
       </div>
-      <div className="w-full h-[30%] mt-[-220px] z-10 flex justify-around">
+      <div className="w-full h-[30%] mt-[-220px] z-10 md:flex justify-around hidden">
         <div className="w-[27%] h-full bg-data2 rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
           <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
             <svg
@@ -122,7 +122,7 @@ export default function Home() {
               />
             </svg>
           </div>
-          <div className="w-[70%] text-[30px] text-center mt-12">
+          <div className="w-[70%] md:text-[30px] text-[18px] text-center mt-12">
             Data Integration
           </div>
         </div>
@@ -167,12 +167,12 @@ export default function Home() {
               />
             </svg>
           </div>
-          <div className="w-[70%] text-[30px] text-center mt-12">
+          <div className="w-[70%] md:text-[30px] text-[18px] text-center mt-12">
             Data Pipeline
           </div>
         </div>
       </div>
-      <div className="w-full h-[30%] z-10 flex justify-around mt-[10vh]">
+      <div className="w-full h-[30%] z-10 hidden md:flex justify-around mt-[10vh]">
         <div className="w-[27%] h-full bg-data2 rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
           <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
             <svg
@@ -214,7 +214,7 @@ export default function Home() {
               />
             </svg>
           </div>
-          <div className="w-[70%] text-[30px] text-center mt-12">
+          <div className="w-[70%] md:text-[30px] text-[18px] text-center mt-12">
             Data visualization
           </div>
         </div>
@@ -259,7 +259,7 @@ export default function Home() {
               />
             </svg>
           </div>
-          <div className="w-[70%] text-[30px] text-center mt-12">
+          <div className="w-[70%] md:text-[30px] text-[18px] text-center mt-12">
             Data Analytics
           </div>
         </div>
@@ -304,9 +304,54 @@ export default function Home() {
               />
             </svg>
           </div>
-          <div className="w-[70%] text-[30px] text-center mt-12">
+          <div className="w-[70%] md:text-[30px] text-[18px] text-center mt-12">
             Data Science
           </div>
+        </div>
+      </div>
+      {/* <div className="h-full w-full bg-datashit mt-[-6.5vh] bg-contain bg-center rounded-md border-solid border-2 border-[#999999] flex flex-col justify-around items-center">
+        <div className="h-[10%] w-[80%] bg-[#EF5941CC] flex justify-center items-center rounded-md border-[#999999] border-2 border-solid text-white mt-[50px]">
+          Data Lakehouse Warehouse
+        </div>
+        <div className="h-[10%] w-[80%] bg-[#EF5941CC] flex justify-center items-center rounded-md border-[#999999] border-2 border-solid text-white">
+          Data Integration
+        </div>
+        <div className="h-[10%] w-[80%] bg-[#EF5941CC] flex justify-center items-center rounded-md border-[#999999] border-2 border-solid text-white">
+          Data Pipeline
+        </div>
+        <div className="h-[10%] w-[80%] bg-[#EF5941CC] flex justify-center items-center rounded-md border-[#999999] border-2 border-solid text-white">
+          Data visualization
+        </div>
+        <div className="h-[10%] w-[80%] bg-[#EF5941CC] flex justify-center items-center rounded-md border-[#999999] border-2 border-solid text-white">
+          Data Analytics
+        </div>
+        <div className="h-[10%] w-[80%] bg-[#EF5941CC] flex justify-center items-center rounded-md border-[#999999] border-2 border-solid text-white mb-[20px]">
+          Data Science
+        </div>
+      </div> */}
+      <div className="h-full w-full bg-datashit mt-[-6.5vh] bg-cover bg-center rounded-xl border-4 border-gradient-to-r from-[#999999] to-[#666666] p-6 flex flex-col justify-around items-center shadow-lg md:hidden">
+        <div className="h-[10%] w-[80%] bg-[#EF5941CC] flex justify-center items-center rounded-2xl border-[1px] border-gradient-to-r from-[#EF5941CC] to-[#999999] text-white py-4 mb-4 transition-transform duration-300 hover:scale-105 shadow-md">
+          Data Lakehouse Warehouse
+        </div>
+
+        <div className="h-[10%] w-[80%] bg-[#EF5941CC] flex justify-center items-center rounded-2xl border-[1px] border-gradient-to-r from-[#EF5941CC] to-[#999999] text-white py-4 mb-4 transition-transform duration-300 hover:scale-105 shadow-md">
+          Data Integration
+        </div>
+
+        <div className="h-[10%] w-[80%] bg-[#EF5941CC] flex justify-center items-center rounded-2xl border-[1px] border-gradient-to-r from-[#EF5941CC] to-[#999999] text-white py-4 mb-4 transition-transform duration-300 hover:scale-105 shadow-md">
+          Data Pipeline
+        </div>
+
+        <div className="h-[10%] w-[80%] bg-[#EF5941CC] flex justify-center items-center rounded-2xl border-[1px] border-gradient-to-r from-[#EF5941CC] to-[#999999] text-white py-4 mb-4 transition-transform duration-300 hover:scale-105 shadow-md">
+          Data Visualization
+        </div>
+
+        <div className="h-[10%] w-[80%] bg-[#EF5941CC] flex justify-center items-center rounded-2xl border-[1px] border-gradient-to-r from-[#EF5941CC] to-[#999999] text-white py-4 mb-4 transition-transform duration-300 hover:scale-105 shadow-md">
+          Data Analytics
+        </div>
+
+        <div className="h-[10%] w-[80%] bg-[#EF5941CC] flex justify-center items-center rounded-2xl border-[1px] border-gradient-to-r from-[#EF5941CC] to-[#999999] text-white py-4 transition-transform duration-300 hover:scale-105 shadow-md">
+          Data Science
         </div>
       </div>
     </div>

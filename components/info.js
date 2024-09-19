@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div
-      className="lg:h-[650px] h-[280px] w-full bg-transparent flex justify-end items-end overflow-hidden scroll-smooth z-20"
+      className="lg:h-[650px] h-[280px] w-full bg-transparent flex justify-end items-end overflow-hidden scroll-smooth z-20 mt-[20vh] md:mt-0"
       id="info"
     >
       <div className="lg:h-[550px] h-[200px] w-full border-[#C68173] md:border-[5px] border-[2px] rounded-3xl md:mr-[-12vh] mr-[-2vh]">

@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
-    "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     extend: {
@@ -46,6 +46,7 @@ module.exports = {
         },
       },
       backgroundImage: {
+        datashit: "linear-gradient(to bottom, #5A807C,#30453D)",
         top1: "linear-gradient(to right, #ffffff00, #ffffff10)",
         head1: "linear-gradient(to bottom, rgb(0,0,0), rgb(0,0,0,0.1))",
         head2:
@@ -57,6 +58,12 @@ module.exports = {
         six2: "linear-gradient(to right bottom, #151515, #5f2921)",
         six3: "linear-gradient(to right top, #5f2921, #151515)",
         six4: "linear-gradient(to right, #151515, #151515, #151515, #5f2921)",
+        mbsix1: "linear-gradient(to bottom, #151515, #151515, #151515,#5f2921)",
+        mbsix2: "linear-gradient(to bottom, #151515, #5f2921)",
+        mbsix3: "linear-gradient(to bottom, #5f2921)",
+        mbsix4: "linear-gradient(to top, #5f2921)",
+        mbsix5: "linear-gradient(to top, #151515, #5f2921)",
+        mbsix6: "linear-gradient(to top, #151515, #151515, #151515, #5f2921)",
         quote1: "linear-gradient(to bottom, white, #243332)",
         quote2: "linear-gradient(to bottom, #1E1E1E, #2B3433)",
         data1: "linear-gradient(to bottom, #EF5239, #F8B8AE)",
@@ -69,5 +76,4 @@ module.exports = {
       },
     },
   },
-  plugins: [require("flowbite/plugin")],
 };
