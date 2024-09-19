@@ -1,4 +1,6 @@
 "use client";
+import { useState } from "react";
+
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -12,6 +14,44 @@ import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 
 export default function Home() {
+  const [formData, setFormData] = useState({
+    type: "",
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setError("");
+    setSuccess(alert("done."));
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setSuccess("Message sent successfully!");
+        setFormData({ type: "", name: "", email: "", message: "" });
+      } else {
+        const errorData = await res.json();
+        setError(errorData.error || "Failed to send message");
+      }
+    } catch (err) {
+      setError("Something went wrong.");
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <div className="h-auto w-full overflow-hidden scroll-smooth">
       <div className="md:h-[140px] h-[120px] w-full md:rotate-2 transform bg-[#5A807C] mt-[120px] relative z-30 overflow-hidden items-center flex">
@@ -175,20 +215,29 @@ export default function Home() {
               future
             </span>
           </div>
-          <div className="w-1/2 h-full flex justify-center">
-            <div className="w-[60%] h-[530px] bg-[#1F1F1F] mt-[-200px] rounded-[20px] flex justify-center items-center flex-col">
+          <form
+            className="w-1/2 h-full flex justify-center"
+            onSubmit={handleSubmit}
+          >
+            <div className="w-[60%] h-[530px] bg-[#1F1F1F] mt-[-200px] rounded-[20px] flex justify-center items-center flex-col ">
               <div className="w-[80%] h-[45px] flex justify-center items-center relative">
                 <select
-                  name="Сонго"
-                  id="cars"
+                  defaultValue="Dev Ops"
+                  htmlFor="type"
+                  id="type"
+                  value={formData.type}
+                  onChange={(e) =>
+                    setFormData({ ...formData, type: e.target.value })
+                  }
+                  required
                   className="w-full h-full px-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white outline-none appearance-none"
                 >
-                  <option value="volvo">Big Data</option>
-                  <option value="saab">System Dev</option>
-                  <option value="mercedes">IoT</option>
-                  <option value="audi">AI Dev</option>
-                  <option value="mercedes">Dev Ops</option>
-                  <option value="mercedes">Mobile Dev</option>
+                  <option value="Big Data">Big Data</option>
+                  <option value="System Dev">System Dev</option>
+                  <option value="IoT">IoT</option>
+                  <option value="AI Dev">AI Dev</option>
+                  <option value="Dev Ops">Dev Ops</option>
+                  <option value="Mobile Dev">Mobile Dev</option>
                 </select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white">
                   <svg
@@ -203,18 +252,40 @@ export default function Home() {
               <input
                 className="w-[80%] h-[45px] pl-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white outline-none mt-5"
                 placeholder="Your name"
+                htmlFor="name"
+                value={formData.name}
+                id="name"
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
               ></input>
               <input
                 className="w-[80%] h-[45px] pl-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white mt-5 outline-none focus:none"
                 placeholder="Email"
+                htmlFor="email"
+                id="email"
+                value={formData.email}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
                 type="email"
               ></input>
-              <input className="w-[80%] h-[185px] pl-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white mt-5 text-start align-text-top pb-[110px] outline-none"></input>
-              <button className="w-[80%] h-[45px] mt-5 bg-[#F27360] rounded-[5px] flex justify-center items-center text-white font-bold">
+              <input
+                id="message"
+                value={formData.message}
+                className="w-[80%] h-[185px] pl-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white mt-5 text-start align-text-top pb-[110px] outline-none"
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
+              ></input>
+              <button
+                className="w-[80%] h-[45px] mt-5 bg-[#F27360] rounded-[5px] flex justify-center items-center text-white font-bold"
+                type="submit"
+              >
                 Send
               </button>
             </div>
-          </div>
+          </form>
         </div>
         <div className="w-full h-[45px] flex justify-center">
           <div className="w-[90%] flex justify-between h-full text-white text-sm">
