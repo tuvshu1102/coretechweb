@@ -104,7 +104,7 @@ export default function Home() {
           />
         </div>
         <div
-          className="absolute w-[70px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden"
+          className="absolute w-[50px] ml-10 h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden"
           style={{ animationDelay: `calc(30s / 4 * (4 - 1) * -1)` }}
         >
           <Image
@@ -126,25 +126,25 @@ export default function Home() {
           />
         </div>
         <div
-          className="absolute w-[130px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden mr-5"
+          className="absolute w-[100px] h-[63px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden"
           style={{ animationDelay: `calc(30s / 4 * (4 - 3) * -1)` }}
-        >
-          <Image
-            alt="coretech"
-            layout="fill"
-            className="md:w-full md:h-full w-full h-full"
-            src="/googlecloud.svg"
-          />
-        </div>
-        <div
-          className="absolute w-[100px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden"
-          style={{ animationDelay: `calc(30s / 4 * (4 - 4) * -1)` }}
         >
           <Image
             alt="coretech"
             layout="fill"
             className="md:w-full md:h-full w-1/2 h-1/2"
             src="/azure.svg"
+          />
+        </div>
+        <div
+          className="absolute w-[130px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden mr-5"
+          style={{ animationDelay: `calc(30s / 4 * (4 - 4) * -1)` }}
+        >
+          <Image
+            alt="coretech"
+            layout="fill"
+            className="md:w-full md:h-full w-full h-full"
+            src="/googlecloud.svg"
           />
         </div>
       </div>
@@ -253,9 +253,11 @@ export default function Home() {
           <div className="w-full md:w-1/2 h-full px-8 py-6 flex justify-center flex-col">
             <span>
               <Image
-                alt="coretech"
-                className="h-[50px]x] [50px]0px]"
-                height={48}
+                src="/logo.svg"
+                class="h-8"
+                alt="Flowbite Logo"
+                width="200"
+                height="200"
               />
             </span>
             <span className="bg-head3 text-transparent bg-clip-text mt-8">
