@@ -130,11 +130,11 @@ const Navbar = () => {
         {isOpen && (
           <motion.div
             key="mobile-menu"
-            initial={{ opacity: 0, height: 0, width: 0 }}
+            initial={{ opacity: 0, height: 0, width: 200 }}
             animate={{ opacity: 1, height: 200, width: 200 }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.5 }}
-            className="md:hidden bg-head1 h-[50vh] ml-auto flex flex-col justify-between items-center"
+            className="md:hidden bg-head1 ml-auto flex flex-col justify-between items-center"
           >
             <div className="h-full w-full flex justify-around items-center flex-col">
               <a

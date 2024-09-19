@@ -53,7 +53,7 @@ module.exports = {
           "linear-gradient(to right, #5A807C, white, white, white, #EF5239)",
         head3: "linear-gradient(to right, #5A807C, white, white, #EF5239)",
         info1:
-          "linear-gradient(to bottom, white, #243332), linear-gradient(-45deg, #5A807C, white, white, #243332)",
+          "linear-gradient(to bottom, white, white, white, #243332), linear-gradient(-45deg, #5A807C, white, white, white, white, #243332)",
         six1: "linear-gradient(to right bottom, #151515, #151515, #5f2921)",
         six2: "linear-gradient(to right bottom, #151515, #5f2921)",
         six3: "linear-gradient(to right top, #5f2921, #151515)",

@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div
-      className="h-[735px] w-[90%] mt-24 flex items-center flex-col text-white scroll-smooth"
+      className="h-[735px] w-[90%] flex items-center flex-col text-white scroll-smooth"
       id="data"
     >
       <div className="h-[144px] w-full flex justify-center items-center z-10">

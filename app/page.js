@@ -8,15 +8,15 @@ const Data = dynamic(() => import("../components/data"), {
   ssr: false,
 });
 
+const Quote = dynamic(() => import("../components/quote"), {
+  ssr: false,
+});
+
 const Top = dynamic(() => import("../components/top"), {
   ssr: false,
 });
 
 const Info = dynamic(() => import("../components/info"), {
-  ssr: false,
-});
-
-const Quote = dynamic(() => import("../components/quote"), {
   ssr: false,
 });
 

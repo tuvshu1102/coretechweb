@@ -8,10 +8,10 @@ export default function Home() {
     >
       <div className="h-full w-full bg-gradient-to-b from-[#121212] via-transparent to-[#121212] flex justify-center items-end">
         <div className="w-4/5 h-[80%] text-white font-normal flex justify-center flex-col items-center ">
-          <p className="md:text-3xl uppercase text-xl">
+          <p className="md:text-3xl uppercase text-[20px]">
             Бид таны бизнесийн найдвартай
           </p>
-          <p className="lg:text-[65px] uppercase font-medium my-14 z-0 text-transparent text-[60px] text-center">
+          <p className="lg:text-[65px] uppercase font-medium my-14 z-0 text-transparent text-[40px] text-center">
             <span className="bg-clip-text bg-head2">Хяналтын тогтолцоо</span>
           </p>
           <p className="text-base text-center lg:w-3/5 mb-[5vh] z-20 w-4/5">
