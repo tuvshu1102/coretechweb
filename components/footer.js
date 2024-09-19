@@ -163,9 +163,11 @@ export default function Home() {
           <div className="w-1/2 h-full pl-[10%] flex justify-center flex-col">
             <span>
               <Image
-                alt="coretech"
-                className="h-[50px]x] [50px]0px]"
-                height={48}
+                src="/logo.svg"
+                class="h-8"
+                alt="Flowbite Logo"
+                width="200"
+                height="200"
               />
             </span>
             <span className="bg-head3 text-transparent bg-clip-text w-[55%] mt-4">
