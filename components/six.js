@@ -18,12 +18,11 @@ export default function Home() {
           <p className="text-[32px] w-4/5 font-medium">Big Data</p>
           <p className="text-[16px] w-4/5 mt-6">
             Lorem ipsum dolor sit amet consectetur. Nisi mi sed quis vestibulum
-            ridiculus adipiscing eget. Nibh enim sagittis at in elementum amet
-            venenatis volutpat. Amet urna purus gravida sit mattis egestas felis
-            quam. Non habitant montes tortor a. Sit vestibulum diam fermentum
-            malesuada morbi. Sed massa hac eu diam. Odio molestie risus faucibus
-            sed. Scelerisque eget commodo vulputate ac mauris purus dictum
-            platea pulvinar.
+            ridiculus adipiscing eget. Nibh enim sagittis venenatis volutpat.
+            Amet urna purus gravida sit mattis egestas felis quam. Non habitant
+            montes tortor a. Sit vestibulum diam fermentum malesuada morbi. Sed
+            massa hac eu diam. Odio molestie risus faucibus sed. Scelerisque
+            eget commodo vulputate ac mauris purus dictum platea pulvinar.
           </p>
         </div>
         <div className="w-[40%] h-full overflow-hidden flex">
@@ -125,12 +124,12 @@ export default function Home() {
         <div className="w-full h-[75%]  relative">
           <p className="w-full h-1/3 px-5">
             Lorem ipsum dolor sit amet consectetur. Nisi mi sed quis vestibulum
-            ridiculus adipiscing eget. Nibh enim sagittis at in elementum amet
+            ridiculus adipiscing eget. Nibh enim sagittis
           </p>
           <div className="w-full h-2/3 flex">
             <p className="w-2/3 h-full pl-5">
-              Nibh enim sagittis at in elementum amet venenatis volutpat. Amet
-              urna purus gravida sit mattis egestas felis quam.
+              in elementum amet venenatis volutpat. Amet urna purus gravida sit
+              mattis egestas felis quam.
             </p>
             <div className="w-[150px] h-full flex justify-end items-end pr-5 pb-5">
               <Image
@@ -151,12 +150,12 @@ export default function Home() {
         <div className="w-full h-[75%]  relative">
           <p className="w-full h-1/3 px-5">
             Lorem ipsum dolor sit amet consectetur. Nisi mi sed quis vestibulum
-            ridiculus adipiscing eget. Nibh enim sagittis at in elementum amet
+            ridiculus adipiscing eget. Nibh enim sagittis
           </p>
           <div className="w-full h-2/3 flex">
             <p className="w-2/3 h-full pl-5">
-              Nibh enim sagittis at in elementum amet venenatis volutpat. Amet
-              urna purus gravida sit mattis egestas felis quam.
+              in elementum amet venenatis volutpat. Amet urna purus gravida sit
+              mattis egestas felis quam.
             </p>
             <div className="w-[150px] h-full flex justify-end items-end pr-5 pb-5">
               <Image
@@ -177,12 +176,12 @@ export default function Home() {
         <div className="w-full h-[75%]  relative">
           <p className="w-full h-1/3 px-5">
             Lorem ipsum dolor sit amet consectetur. Nisi mi sed quis vestibulum
-            ridiculus adipiscing eget. Nibh enim sagittis at in elementum amet
+            ridiculus adipiscing eget. Nibh enim sagittis
           </p>
           <div className="w-full h-2/3 flex">
             <p className="w-2/3 h-full pl-5">
-              Nibh enim sagittis at in elementum amet venenatis volutpat. Amet
-              urna purus gravida sit mattis egestas felis quam.
+              in elementum amet venenatis volutpat. Amet urna purus gravida sit
+              mattis egestas felis quam.
             </p>
             <div className="w-[150px] h-full flex justify-end items-end pr-5 pb-5">
               <Image
@@ -203,12 +202,12 @@ export default function Home() {
         <div className="w-full h-[75%]  relative">
           <p className="w-full h-1/3 px-5">
             Lorem ipsum dolor sit amet consectetur. Nisi mi sed quis vestibulum
-            ridiculus adipiscing eget. Nibh enim sagittis at in elementum amet
+            ridiculus adipiscing eget. Nibh enim sagittis
           </p>
           <div className="w-full h-2/3 flex">
             <p className="w-2/3 h-full pl-5">
-              Nibh enim sagittis at in elementum amet venenatis volutpat. Amet
-              urna purus gravida sit mattis egestas felis quam.
+              in elementum amet venenatis volutpat. Amet urna purus gravida sit
+              mattis egestas felis quam.
             </p>
             <div className="w-[150px] h-full flex justify-end items-end pr-5 pb-5">
               <Image
@@ -232,12 +231,12 @@ export default function Home() {
         <div className="w-full h-[75%]  relative">
           <p className="w-full h-1/3 px-5">
             Lorem ipsum dolor sit amet consectetur. Nisi mi sed quis vestibulum
-            ridiculus adipiscing eget. Nibh enim sagittis at in elementum amet
+            ridiculus adipiscing eget. Nibh enim sagittis
           </p>
           <div className="w-full h-2/3 flex">
             <p className="w-2/3 h-full pl-5">
-              Nibh enim sagittis at in elementum amet venenatis volutpat. Amet
-              urna purus gravida sit mattis egestas felis quam.
+              in elementum amet venenatis volutpat. Amet urna purus gravida sit
+              mattis egestas felis quam.
             </p>
             <div className="w-[150px] h-full flex justify-end items-end pr-5 pb-5">
               <Image

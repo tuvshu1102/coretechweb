@@ -34,7 +34,13 @@ const Navbar = () => {
                 scrollToSection("#top");
               }}
             >
-              <Image src="/logo.svg" class="h-8" alt="Flowbite Logo" />
+              <Image
+                src="/logo.svg"
+                class="h-8"
+                alt="Flowbite Logo"
+                width="200"
+                height="200"
+              />
             </a>
           </div>
 
