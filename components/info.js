@@ -8,7 +8,7 @@ export default function Home() {
     >
       <div className="lg:h-[550px] h-[200px] w-full border-[#C68173] md:border-[5px] border-[2px] rounded-3xl md:mr-[-12vh] mr-[-2vh]">
         <div className=" text-transparent mt-6 ml-6">
-          <p className="uppercase bg-clip-text bg-info1 md:text-[38px] text-[20px] pr-[3vh] md:pr-0">
+          <p className="uppercase bg-clip-text bg-info1 md:text-[38px] text-[20px] pr-[3vh] ">
             &quot;Coretech&quot; Компани нь Мэдээлэл технологийн чиглэлээр тэр
             дундаа дараах үндсэн чиглэлээр үйл ажиллагаа явуулдаг.
           </p>

@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="hidden md:flex h-full w-[30%]">
             <a
               href="#"
-              className="text-white hover:font-medium duration-200 h-full font-light flex justify-center items-center w-[25%]"
+              className="text-gray-500 hover:text-white hover:font-semibold duration-200 h-full font-light flex justify-center items-center w-[25%]"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("#top");
@@ -58,7 +58,7 @@ const Navbar = () => {
             </a>
             <a
               href="#"
-              className="text-white hover:font-medium duration-200 h-full font-light flex justify-center items-center w-[30%]"
+              className="text-gray-500 hover:text-white hover:font-semibold duration-200 h-full font-light flex justify-center items-center w-[30%]"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("#info");
@@ -68,7 +68,7 @@ const Navbar = () => {
             </a>
             <a
               href="#"
-              className="text-white hover:font-medium duration-200 h-full font-light flex justify-center items-center w-[50%]"
+              className="text-gray-500 hover:text-white hover:font-semibold duration-200 h-full font-light flex justify-center items-center w-[50%]"
               onClick={(e) => {
                 e.preventDefault();
                 scrollToSection("#data");

@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        custom: ["tt_octosquares", "sans-serif"],
+      },
       spacing: {
         "200px": "200px", // Define custom width for item width
       },
@@ -68,6 +71,8 @@ module.exports = {
         quote2: "linear-gradient(to bottom, #1E1E1E, #2B3433)",
         data1: "linear-gradient(to bottom, #EF5239, #F8B8AE)",
         data2: "linear-gradient(to right bottom, #292929, #5A807C)",
+        data3:
+          "linear-gradient(to bottom, rgba(133, 71, 246, 0.16), rgba(255, 255, 255, 0.69), rgba(255, 255, 255, 0.24), rgba(133, 71, 246, 0.16))",
         footer1: "url(/logos.png)",
         mouse: "0 0 20px rgba(242, 115, 96, 0.6)",
       },

@@ -12,7 +12,9 @@ export default function Home() {
             Бид таны бизнесийн найдвартай
           </p>
           <p className="lg:text-[65px] uppercase font-medium my-14 z-0 text-transparent text-[40px] text-center">
-            <span className="bg-clip-text bg-head2">Хяналтын тогтолцоо</span>
+            <span className="bg-clip-text bg-head2 tracking-widest font-semibold">
+              Хяналтын тогтолцоо
+            </span>
           </p>
           <p className="text-base text-center lg:w-3/5 mb-[5vh] z-20 w-4/5">
             Өнөөдрийн байдлаар манай компани нь "<strong>Big Data</strong>"

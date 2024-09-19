@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "tt_octosquares";
+  src: url("/font/tt_octosquares/TT Octosquares Trial Light.ttf")
+    format("truetype");
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,6 +22,8 @@
 }
 
 body {
+  letter-spacing: 100px;
+  font-family: "tt_octosquares", sans-serif;
   scroll-behavior: smooth;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

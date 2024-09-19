@@ -15,7 +15,7 @@ export default function Home() {
     <div className="lg:h-[1101px] h-auto md:w-4/5 w-full md:mt-[-25vh] flex items-center flex-col text-white z-30">
       <div className="w-full h-[31%] bg-six1 rounded-[25px] md:flex hidden mb-[30px]">
         <div className="w-[60%] h-full font-normal pl-16 pt-10">
-          <p className="text-[32px] w-4/5 font-medium">Big Data</p>
+          <p className="text-[32px] w-4/5 font-semibold">Big Data</p>
           <p className="text-[16px] w-4/5 mt-6">
             Lorem ipsum dolor sit amet consectetur. Nisi mi sed quis vestibulum
             ridiculus adipiscing eget. Nibh enim sagittis venenatis volutpat.
@@ -56,7 +56,7 @@ export default function Home() {
       <div className="w-full h-[31%] hidden md:flex justify-between mb-[30px]">
         <div className="w-[58%] h-full rounded-[25px] bg-[#151515] flex">
           <div className="w-[60%] h-full font-normal pl-16 pt-10">
-            <p className="text-[32px] w-4/5 font-medium">System Dev</p>
+            <p className="text-[32px] w-4/5 font-semibold">System Dev</p>
             <p className="text-[16px] w-4/5 mt-6">
               Lorem ipsum dolor sit amet consectetur. Nisi mi sed quis
               vestibulum ridiculus adipiscing eget. Nibh enim sagittis at in
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
         <div className="w-[40%] h-full rounded-[25px] bg-six2 flex">
           <div className="w-[60%] h-full font-normal pl-16 pt-10">
-            <p className="text-[32px] w-4/5 font-medium">IoT</p>
+            <p className="text-[32px] w-4/5 font-semibold">IoT</p>
             <p className="text-[16px] w-4/5 mt-6">
               Lorem ipsum dolor sit amet consectetur. Nisi mi sed quis
               vestibulum ridiculus adipiscing eget. Nibh enim sagittis at in
@@ -92,7 +92,7 @@ export default function Home() {
       <div className="w-full h-[31%] hidden md:flex justify-between">
         <div className="w-[40%] h-full rounded-[25px] bg-six3 flex">
           <div className="w-[60%] h-full font-normal pl-16 pt-10">
-            <p className="text-[32px] w-4/5 font-medium">AI Dev</p>
+            <p className="text-[32px] w-4/5 font-semibold">AI Dev</p>
             <p className="text-[16px] w-4/5 mt-6">
               Lorem ipsum dolor sit amet consectetur. Nisi mi sed quis
               vestibulum ridiculus adipiscing eget. Nibh enim sagittis at in
@@ -105,7 +105,7 @@ export default function Home() {
         </div>
         <div className="w-[58%] h-full rounded-[25px] bg-six4 flex">
           <div className="w-[45%] h-full font-normal pl-16 pt-10">
-            <p className="text-[32px] w-4/5 font-medium">Dev Ops</p>
+            <p className="text-[32px] w-4/5 font-semibold">Dev Ops</p>
             <p className="text-[16px] w-4/5 mt-6">
               Lorem ipsum dolor sit amet consectetur. Nisi mi sed quis
               vestibulum ridiculus adipiscing eget. Nibh enim sagittis at in
@@ -121,7 +121,7 @@ export default function Home() {
         className="w-[90%] h-[32vh] rounded-lg bg-mbsix1 mt-[40px] md:hidden"
         data-aos="fade-up-left"
       >
-        <div className="w-full h-[25%] text-2xl items-center font-medium flex pl-5">
+        <div className="w-full h-[25%] text-2xl items-center flex pl-5 font-bold">
           Big Data
         </div>
         <div className="w-full h-[75%]  relative">
@@ -150,7 +150,7 @@ export default function Home() {
         className="w-[90%] h-[32vh] rounded-lg bg-mbsix2 mt-[40px] md:hidden"
         data-aos="fade-up-right"
       >
-        <div className="w-full h-[25%] text-2xl items-center font-medium flex pl-5">
+        <div className="w-full h-[25%] text-2xl items-center flex pl-5 font-bold">
           System Dev
         </div>
         <div className="w-full h-[75%]  relative">
@@ -179,7 +179,7 @@ export default function Home() {
         className="w-[90%] h-[32vh] rounded-lg bg-[#5f2921] mt-[40px] md:hidden"
         data-aos="fade-up-left"
       >
-        <div className="w-full h-[25%] text-2xl items-center font-medium flex pl-5">
+        <div className="w-full h-[25%] text-2xl items-center flex pl-5 font-bold">
           AI Dev
         </div>
         <div className="w-full h-[75%]  relative">
@@ -208,7 +208,7 @@ export default function Home() {
         className="w-[90%] h-[32vh] rounded-lg bg-mbsix5 mt-[40px] md:hidden"
         data-aos="fade-up-right"
       >
-        <div className="w-full h-[25%] text-2xl items-center font-medium flex pl-5">
+        <div className="w-full h-[25%] text-2xl items-center flex pl-5 font-bold">
           IoT
         </div>
         <div className="w-full h-[75%]  relative">
@@ -237,7 +237,7 @@ export default function Home() {
         className="w-[90%] h-[32vh] rounded-lg bg-mbsix6 mt-[40px] md:hidden "
         data-aos="fade-up-left"
       >
-        <div className="w-full h-[25%] text-2xl items-center font-medium flex pl-5">
+        <div className="w-full h-[25%] text-2xl items-center flex pl-5 font-bold">
           Dev Ops
         </div>
         <div className="w-full h-[75%]  relative">

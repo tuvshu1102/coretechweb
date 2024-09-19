@@ -16,98 +16,90 @@ export default function Home() {
     <div className="h-auto w-full overflow-hidden scroll-smooth">
       <div className="md:h-[140px] h-[120px] w-full md:rotate-2 transform bg-[#5A807C] mt-[120px] relative z-30 overflow-hidden items-center flex">
         <div
-          className="absolute w-[200px] h-[100px] left-full animate-scrollLeft flex justify-center items-center"
+          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center"
           style={{ animationDelay: `calc(30s / 8 * (8 - 1) * -1)` }}
         >
           <Image
             alt="coretech"
-            width="100"
-            height="100"
-            className="w-[40px]"
+            layout="fill"
+            className="w-[20px] h-[20px]"
             src="/aws.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[100px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
           style={{ animationDelay: `calc(30s / 8 * (8 - 2) * -1)` }}
         >
           <Image
             alt="coretech"
-            width="200"
-            height="200"
-            className="w-[40px]"
+            layout="fill"
+            className="h-[20px] w-[20px]"
             src="/azure.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[100px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
           style={{ animationDelay: `calc(30s / 8 * (8 - 3) * -1)` }}
         >
           <Image
             alt="coretech"
-            width="100"
-            height="100"
-            className="w-[40px]"
+            layout="fill"
+            className="h-[20px] w-[20px]"
             src="/sap.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[100px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
           style={{ animationDelay: `calc(30s / 8 * (8 - 4) * -1)` }}
         >
           <Image
             alt="coretech"
             width="200"
             height="200"
-            className="w-[40px]"
             src="/googlecloud.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[100px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
           style={{ animationDelay: `calc(30s / 8 * (8 - 5) * -1)` }}
         >
           <Image
             alt="coretech"
-            width="100"
-            height="100"
-            className="w-[40px]"
+            layout="fill"
+            className="h-[20px] w-[20px]"
             src="/aws.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[100px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
           style={{ animationDelay: `calc(30s / 8 * (8 - 6) * -1)` }}
         >
           <Image
             alt="coretech"
-            width="200"
-            height="200"
-            className="w-[40px]"
+            layout="fill"
+            className="h-[20px] w-[20px]"
             src="/azure.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[100px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
           style={{ animationDelay: `calc(30s / 8 * (8 - 7) * -1)` }}
         >
           <Image
             alt="coretech"
-            width="100"
-            height="100"
-            className="w-[40px]"
+            layout="fill"
+            className="h-[20px] w-[20px]"
             src="/sap.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[100px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
           style={{ animationDelay: `calc(30s / 8 * (8 - 8) * -1)` }}
         >
           <Image
             alt="coretech"
             width="200"
             height="200"
-            className="w-[40px]"
             src="/googlecloud.svg"
           />
         </div>
@@ -126,7 +118,12 @@ export default function Home() {
         <div className="h-[350px] w-full flex">
           <div className="w-1/2 h-full pl-[10%] flex justify-center flex-col">
             <span>
-              <Image alt="coretech" src="/logo.svg" width={178} height={48} />
+              <Image
+                alt="coretech"
+                layout="fill"
+                className="h-[20px] w-[20px]"
+                height={48}
+              />
             </span>
             <span className="bg-head3 text-transparent bg-clip-text w-[55%] mt-4">
               Companies that can help you in developing your company for the
@@ -202,7 +199,7 @@ export default function Home() {
             <p className="text-xl md:text-3xl lg:text-4xl">
               Interested in growing your business?
             </p>
-            <p className="text-4xl md:text-5xl lg:text-6xl mt-[20px] font-semibold">
+            <p className="text-4xl md:text-5xl lg:text-6xl mt-[20px] font-bold">
               Write to us!
             </p>
           </span>
@@ -210,7 +207,12 @@ export default function Home() {
         <div className="h-auto w-full flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 h-full px-8 py-6 flex justify-center flex-col">
             <span>
-              <Image alt="coretech" src="/logo.svg" width={178} height={48} />
+              <Image
+                alt="coretech"
+                layout="fill"
+                className="h-[20px] w-[20px]"
+                height={48}
+              />
             </span>
             <span className="bg-head3 text-transparent bg-clip-text mt-8">
               Companies that can help you in developing your company for the
