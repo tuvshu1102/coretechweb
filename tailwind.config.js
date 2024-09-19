@@ -25,7 +25,7 @@ module.exports = {
       },
       keyframes: {
         scrollLeft: {
-          to: { left: "-200px" }, // Define the scrollLeft keyframes
+          to: { left: "-100px" }, // Define the scrollLeft keyframes
         },
         scroll: {
           "0%": { transform: "translateX(0)" },

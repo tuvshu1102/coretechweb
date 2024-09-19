@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image from "next/Image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { motion } from "framer-motion";
@@ -16,91 +16,135 @@ export default function Home() {
     <div className="h-auto w-full overflow-hidden scroll-smooth">
       <div className="md:h-[140px] h-[120px] w-full md:rotate-2 transform bg-[#5A807C] mt-[120px] relative z-30 overflow-hidden items-center flex">
         <div
-          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center"
+          className="absolute w-[90px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft hidden md:block"
           style={{ animationDelay: `calc(30s / 8 * (8 - 1) * -1)` }}
         >
           <Image
             alt="coretech"
             layout="fill"
-            className="w-[20px] h-[20px]"
-            src="/aws.svg"
+            className="md:w-full md:h-full w-1/2 h-1/2"
+            src="/sap.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[200px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft hidden md:block"
           style={{ animationDelay: `calc(30s / 8 * (8 - 2) * -1)` }}
         >
           <Image
             alt="coretech"
             layout="fill"
-            className="h-[20px] w-[20px]"
-            src="/azure.svg"
+            className="md:w-full md:h-full w-1/2 h-1/2"
+            src="/googlecloud.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[161x] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft hidden md:block"
           style={{ animationDelay: `calc(30s / 8 * (8 - 3) * -1)` }}
         >
           <Image
             alt="coretech"
             layout="fill"
-            className="h-[20px] w-[20px]"
-            src="/sap.svg"
+            className="md:w-full md:h-full w-1/2 h-1/2"
+            src="/azure.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[70px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft hidden md:block"
           style={{ animationDelay: `calc(30s / 8 * (8 - 4) * -1)` }}
         >
           <Image
             alt="coretech"
-            width="200"
-            height="200"
-            src="/googlecloud.svg"
+            layout="fill"
+            className="md:w-full md:h-full w-1/2 h-1/2"
+            src="/aws.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[90px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  hidden md:block"
           style={{ animationDelay: `calc(30s / 8 * (8 - 5) * -1)` }}
         >
           <Image
             alt="coretech"
             layout="fill"
-            className="h-[20px] w-[20px]"
-            src="/aws.svg"
+            className="md:w-full md:h-full w-1/2 h-1/2"
+            src="/sap.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[200px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  hidden md:block"
           style={{ animationDelay: `calc(30s / 8 * (8 - 6) * -1)` }}
         >
           <Image
             alt="coretech"
             layout="fill"
-            className="h-[20px] w-[20px]"
-            src="/azure.svg"
+            className="md:w-full md:h-full w-1/2 h-1/2"
+            src="/googlecloud.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[161px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  hidden md:block"
           style={{ animationDelay: `calc(30s / 8 * (8 - 7) * -1)` }}
         >
           <Image
             alt="coretech"
             layout="fill"
-            className="h-[20px] w-[20px]"
-            src="/sap.svg"
+            className="md:w-full md:h-full w-1/2 h-1/2"
+            src="/azure.svg"
           />
         </div>
         <div
-          className="absolute w-[200px] h-[30px] left-full animate-scrollLeft flex justify-center items-center mx-[50px]"
+          className="absolute w-[70px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  hidden md:block"
           style={{ animationDelay: `calc(30s / 8 * (8 - 8) * -1)` }}
         >
           <Image
             alt="coretech"
-            width="200"
-            height="200"
+            layout="fill"
+            className="md:w-full md:h-full w-1/2 h-1/2"
+            src="/aws.svg"
+          />
+        </div>
+        <div
+          className="absolute w-[70px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden"
+          style={{ animationDelay: `calc(30s / 4 * (4 - 1) * -1)` }}
+        >
+          <Image
+            alt="coretech"
+            layout="fill"
+            className="md:w-full md:h-full w-1/2 h-1/2"
+            src="/aws.svg"
+          />
+        </div>
+        <div
+          className="absolute w-[70px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden"
+          style={{ animationDelay: `calc(30s / 4 * (4 - 2) * -1)` }}
+        >
+          <Image
+            alt="coretech"
+            layout="fill"
+            className="md:w-full md:h-full w-1/2 h-1/2"
+            src="/sap.svg"
+          />
+        </div>
+        <div
+          className="absolute w-[130px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden mr-5"
+          style={{ animationDelay: `calc(30s / 4 * (4 - 3) * -1)` }}
+        >
+          <Image
+            alt="coretech"
+            layout="fill"
+            className="md:w-full md:h-full w-full h-full"
             src="/googlecloud.svg"
+          />
+        </div>
+        <div
+          className="absolute w-[100px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft  block md:hidden"
+          style={{ animationDelay: `calc(30s / 4 * (4 - 4) * -1)` }}
+        >
+          <Image
+            alt="coretech"
+            layout="fill"
+            className="md:w-full md:h-full w-1/2 h-1/2"
+            src="/azure.svg"
           />
         </div>
       </div>
@@ -120,8 +164,7 @@ export default function Home() {
             <span>
               <Image
                 alt="coretech"
-                layout="fill"
-                className="h-[20px] w-[20px]"
+                className="h-[50px]x] [50px]0px]"
                 height={48}
               />
             </span>
@@ -209,8 +252,7 @@ export default function Home() {
             <span>
               <Image
                 alt="coretech"
-                layout="fill"
-                className="h-[20px] w-[20px]"
+                className="h-[50px]x] [50px]0px]"
                 height={48}
               />
             </span>
