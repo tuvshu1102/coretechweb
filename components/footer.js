@@ -177,8 +177,31 @@ export default function Home() {
           </div>
           <div className="w-1/2 h-full flex justify-center">
             <div className="w-[60%] h-[530px] bg-[#1F1F1F] mt-[-200px] rounded-[20px] flex justify-center items-center flex-col">
+              <div className="w-[80%] h-[45px] flex justify-center items-center relative">
+                <select
+                  name="Сонго"
+                  id="cars"
+                  className="w-full h-full px-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white outline-none appearance-none"
+                >
+                  <option value="volvo">Big Data</option>
+                  <option value="saab">System Dev</option>
+                  <option value="mercedes">IoT</option>
+                  <option value="audi">AI Dev</option>
+                  <option value="mercedes">Dev Ops</option>
+                  <option value="mercedes">Mobile Dev</option>
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white">
+                  <svg
+                    className="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M5.516 7.548l4.258 4.12 4.258-4.12 1.291 1.358-5.549 5.38-5.549-5.38z" />
+                  </svg>
+                </div>
+              </div>
               <input
-                className="w-[80%] h-[45px] pl-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white outline-none"
+                className="w-[80%] h-[45px] pl-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white outline-none mt-5"
                 placeholder="Your name"
               ></input>
               <input
@@ -267,6 +290,29 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/2 flex justify-center py-6">
             <div className="w-10/12 lg:w-3/4 h-auto bg-[#1F1F1F] p-6 rounded-lg flex flex-col space-y-4">
+              <div className="w-full h-12 flex justify-center items-center relative">
+                <select
+                  name="Сонго"
+                  id="cars"
+                  className="w-full h-full px-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white outline-none appearance-none"
+                >
+                  <option value="volvo">Big Data</option>
+                  <option value="saab">System Dev</option>
+                  <option value="mercedes">IoT</option>
+                  <option value="audi">AI Dev</option>
+                  <option value="mercedes">Dev Ops</option>
+                  <option value="mercedes">Mobile Dev</option>
+                </select>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white">
+                  <svg
+                    className="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M5.516 7.548l4.258 4.12 4.258-4.12 1.291 1.358-5.549 5.38-5.549-5.38z" />
+                  </svg>
+                </div>
+              </div>
               <input
                 className="w-full h-12 px-4 bg-[#2A2A2A] rounded-md border border-[#4C4C4C] text-white"
                 placeholder="Your name"

@@ -113,7 +113,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-[55%] h-full flex justify-center items-center overflow-hidden">
-            <Image alt="coretech" src="/devops.png" width="450" height="450" />
+            <Image alt="coretech" src="/devops.svg" width="280" height="280" />
           </div>
         </div>
       </div>
