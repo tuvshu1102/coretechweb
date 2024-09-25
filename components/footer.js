@@ -250,6 +250,7 @@ export default function Home() {
                 </div>
               </div>
               <input
+                required
                 className="w-[80%] h-[45px] pl-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white outline-none mt-5"
                 placeholder="Your name"
                 htmlFor="name"
@@ -260,6 +261,7 @@ export default function Home() {
                 }
               ></input>
               <input
+                required
                 className="w-[80%] h-[45px] pl-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white mt-5 outline-none focus:none"
                 placeholder="Email"
                 htmlFor="email"
@@ -271,6 +273,7 @@ export default function Home() {
                 type="email"
               ></input>
               <input
+                required
                 id="message"
                 value={formData.message}
                 className="w-[80%] h-[185px] pl-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white mt-5 text-start align-text-top pb-[110px] outline-none"
@@ -360,19 +363,25 @@ export default function Home() {
             </span>
           </div>
           <div className="w-full md:w-1/2 flex justify-center py-6">
-            <div className="w-10/12 lg:w-3/4 h-auto bg-[#1F1F1F] p-6 rounded-lg flex flex-col space-y-4">
+            <form
+              className="w-10/12 lg:w-3/4 h-auto bg-[#1F1F1F] p-6 rounded-lg flex flex-col space-y-4"
+              onSubmit={handleSubmit}
+            >
               <div className="w-full h-12 flex justify-center items-center relative">
                 <select
-                  name="Сонго"
-                  id="cars"
+                  value={formData.type}
+                  onChange={(e) =>
+                    setFormData({ ...formData, type: e.target.value })
+                  }
+                  id="select"
                   className="w-full h-full px-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white outline-none appearance-none"
                 >
-                  <option value="volvo">Big Data</option>
-                  <option value="saab">System Dev</option>
-                  <option value="mercedes">IoT</option>
-                  <option value="audi">AI Dev</option>
-                  <option value="mercedes">Dev Ops</option>
-                  <option value="mercedes">Mobile Dev</option>
+                  <option value="Big Data">Big Data</option>
+                  <option value="System Dev">System Dev</option>
+                  <option value="IoT">IoT</option>
+                  <option value="AI Dev">AI Dev</option>
+                  <option value="Dev Ops">Dev Ops</option>
+                  <option value="Mobile Dev">Mobile Dev</option>
                 </select>
                 <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-white">
                   <svg
@@ -387,20 +396,41 @@ export default function Home() {
               <input
                 className="w-full h-12 px-4 bg-[#2A2A2A] rounded-md border border-[#4C4C4C] text-white"
                 placeholder="Your name"
+                htmlFor="name"
+                value={formData.name}
+                id="name"
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
               />
               <input
                 className="w-full h-12 px-4 bg-[#2A2A2A] rounded-md border border-[#4C4C4C] text-white"
                 placeholder="Email"
                 type="email"
+                htmlFor="email"
+                value={formData.email}
+                id="email"
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
               />
               <textarea
                 className="w-full h-40 px-4 py-2 bg-[#2A2A2A] rounded-md border border-[#4C4C4C] text-white resize-none"
                 placeholder="Your message"
+                htmlFor="message"
+                value={formData.message}
+                id="message"
+                onChange={(e) =>
+                  setFormData({ ...formData, message: e.target.value })
+                }
               />
-              <button className="w-full h-12 bg-[#F27360] rounded-md text-white font-semibold">
+              <button
+                className="w-full h-12 bg-[#F27360] rounded-md text-white font-semibold"
+                type="submit"
+              >
                 Send
               </button>
-            </div>
+            </form>
           </div>
         </div>
         <div className="w-full py-6 flex justify-center items-center h-full">
