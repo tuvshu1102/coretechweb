@@ -230,7 +230,7 @@ export default function Home() {
                     setFormData({ ...formData, type: e.target.value })
                   }
                   required
-                  className="w-full h-full px-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white outline-none appearance-none"
+                  className="w-full h-full px-5 bg-[#2A2A2A] font-custom rounded-[5px] border-[1px] border-[#4C4C4C] text-white outline-none appearance-none"
                 >
                   <option value="" disabled>
                     Choose...
@@ -285,7 +285,7 @@ export default function Home() {
                 }
               ></input>
               <button
-                className="w-[80%] h-[45px] mt-5 bg-[#F27360] rounded-[5px] flex justify-center items-center text-white font-bold"
+                className="w-[80%] h-[45px] mt-5 bg-[#EF5239] rounded-[5px] flex justify-center items-center text-white font-bold"
                 type="submit"
               >
                 Send
