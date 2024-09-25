@@ -232,7 +232,9 @@ export default function Home() {
                   required
                   className="w-full h-full px-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white outline-none appearance-none"
                 >
-                  <option value="Random">Choose...</option>
+                  <option value="" disabled>
+                    Choose...
+                  </option>
                   <option value="Big Data">Big Data</option>
                   <option value="System Dev">System Dev</option>
                   <option value="IoT">IoT</option>
@@ -377,7 +379,9 @@ export default function Home() {
                   id="select"
                   className="w-full h-full px-5 bg-[#2A2A2A] rounded-[5px] border-[1px] border-[#4C4C4C] text-white outline-none appearance-none"
                 >
-                  <option value="Random">Choose...</option>
+                  <option value="Random" disabled>
+                    Choose...
+                  </option>
                   <option value="Big Data">Big Data</option>
                   <option value="System Dev">System Dev</option>
                   <option value="IoT">IoT</option>
