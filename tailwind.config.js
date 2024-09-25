@@ -51,6 +51,8 @@ module.exports = {
         },
       },
       backgroundImage: {
+        topdark:
+          "linear-gradient(to left, rgba(255, 255, 255, 8), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0))",
         datashit: "linear-gradient(to bottom, #5A807C,#30453D)",
         top1: "linear-gradient(to right, #ffffff00, #ffffff10)",
         head1: "linear-gradient(to bottom, rgb(0,0,0), rgb(0,0,0,0.1))",
