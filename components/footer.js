@@ -431,7 +431,7 @@ export default function Home() {
                 }
               />
               <button
-                className="w-full h-12 bg-[#F27360] rounded-md text-white font-semibold"
+                className="w-full h-12 bg-[#EF5239] rounded-md text-white font-semibold"
                 type="submit"
               >
                 Send

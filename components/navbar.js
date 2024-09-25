@@ -115,17 +115,17 @@ const Navbar = () => {
               {/* Custom Hamburger / X Icon */}
               <div className="w-6 h-6 flex flex-col justify-between items-center">
                 <motion.span
-                  className="block h-0.5 w-6 bg-[#F27360]"
+                  className="block h-0.5 w-6 bg-[#EF5239]"
                   animate={isOpen ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
                   transition={{ duration: 0.3 }}
                 />
                 <motion.span
-                  className="block h-0.5 w-6 bg-[#F27360]"
+                  className="block h-0.5 w-6 bg-[#EF5239]"
                   animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
                   transition={{ duration: 0.3 }}
                 />
                 <motion.span
-                  className="block h-0.5 w-6 bg-[#F27360]"
+                  className="block h-0.5 w-6 bg-[#EF5239]"
                   animate={
                     isOpen ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }
                   }
