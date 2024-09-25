@@ -17,10 +17,11 @@ export default function Home() {
             </span>
           </p>
           <p className="text-base text-center lg:w-3/5 mb-[5vh] z-20 w-4/5">
-            Өнөөдрийн байдлаар манай компани нь "<strong>Big Data</strong>"
-            чиглэлээр "<strong>Datalake house</strong>" консепцийг тухайн
-            байгууллагуудын шаардлагад нь нийцүүлэн хөгжүүлэлтийг хийж өгч
-            байна.
+            Өнөөдрийн байдлаар манай компани нь "
+            <strong className="font-boldocto">Big Data</strong>" чиглэлээр "
+            <strong className="font-boldocto">Datalake house</strong>"
+            консепцийг тухайн байгууллагуудын шаардлагад нь нийцүүлэн
+            хөгжүүлэлтийг хийж өгч байна.
           </p>
           <div className="flex justify-center items-center h-[180px] w-full">
             <div className="flex justify-center border-[3px] border-white h-[70px] w-[40px] rounded-xl pt-6">

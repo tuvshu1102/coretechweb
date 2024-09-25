@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         custom: ["tt_octosquares", "sans-serif"],
+        boldocto: ["tt_octosquares_bold", "sans-serif"],
       },
       spacing: {
         "200px": "200px", // Define custom width for item width

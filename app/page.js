@@ -46,7 +46,7 @@ export default function Home() {
   };
   return (
     <Suspense fallback={<>Loading...</>}>
-      <main className="h-auto w-full bg-[#121212] m-0 p-0 relative flex items-center flex-col scroll-smooth font-custom tracking-wide">
+      <main className="h-auto w-full bg-[#121212] m-0 p-0 relative flex items-center flex-col scroll-smooth font-custom tracking-wide overflow-hidden">
         <div className="absolute z-1 top-[650px] left-[30px] h-[107px] w-[20%] bg-[#5a807c] blur-[100px] rounded-[40%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
         <div className="absolute z-1 top-[1650px] left-[30px] h-[147px] w-[23%] bg-[#5a807c] blur-[200px] rounded-[30%] shadow-[0px_0px_100px_140px_#5a807c]"></div>
         <div className="absolute z-1 top-[1000px] right-[0px] h-[107px] w-[10%] bg-[#5a807c] blur-[200px] rounded-full shadow-[0px_0px_100px_140px_#5a807c]"></div>

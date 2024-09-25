@@ -7,6 +7,13 @@
   src: url("/font/tt_octosquares/TT Octosquares Trial Light.ttf")
     format("truetype");
 }
+
+@font-face {
+  font-family: "tt_octosquares_bold";
+  src: url("/font/tt_octosquares/TT Octosquares Trial Medium.ttf")
+    format("truetype");
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

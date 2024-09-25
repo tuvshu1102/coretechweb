@@ -196,7 +196,7 @@ export default function Home() {
         <div className="h-[235px] w-full border-t-[1px] border-b-[1px] border-[#5A807C]">
           <span className="bg-head3 text-transparent bg-clip-text w-[45%] h-full flex justify-center flex-col ml-[10%]">
             <p className="text-[40px]">Interested in growing your business?</p>
-            <p className="text-[70px]">Write to us!</p>
+            <p className="text-[70px] font-boldocto">Write to us!</p>
           </span>
         </div>
         <div className="h-[350px] w-full flex">
@@ -341,7 +341,7 @@ export default function Home() {
             <p className="text-xl md:text-3xl lg:text-4xl">
               Interested in growing your business?
             </p>
-            <p className="text-4xl md:text-5xl lg:text-6xl mt-[20px] font-bold">
+            <p className="text-4xl md:text-5xl lg:text-6xl mt-[20px] font-boldocto">
               Write to us!
             </p>
           </span>
