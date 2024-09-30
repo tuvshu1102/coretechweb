@@ -49,8 +49,8 @@ export default function Home() {
             <Image
               alt="coretech"
               src="/dsystemdev.svg"
-              width="700"
-              height="700"
+              width="300"
+              height="300"
               className=""
             />
           </div>
@@ -108,8 +108,8 @@ export default function Home() {
             <Image
               alt="coretech"
               src="/ddevops.svg"
-              width="320"
-              height="320"
+              width="300"
+              height="300"
               className="absolute right-0 "
             />
           </div>
@@ -190,12 +190,12 @@ export default function Home() {
               in elementum amet venenatis volutpat. Amet urna purus gravida sit
               mattis egestas felis quam.
             </p>
-            <div className="w-[150px] h-full flex justify-end items-end pr-5 pb-5">
+            <div className="w-[150px] h-full flex justify-end items-end pr-5">
               <Image
                 alt="coretech"
                 src="/mai.svg"
-                width="150"
-                height="150"
+                width="300"
+                height="300"
                 className="h-[10vh] w-[10vh]"
               />
             </div>
