@@ -215,12 +215,12 @@ const Navbar = () => {
             animate={{ opacity: 1, height: 200, width: 200 }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.5 }}
-            className="md:hidden bg-head1 ml-auto flex flex-col justify-between items-center"
+            className="md:hidden dark:bg-head1 bg-dehead1 ml-auto flex flex-col justify-between items-center"
           >
             <div className="h-full w-full flex justify-around items-center flex-col">
               <a
                 href="#"
-                className="block text-white"
+                className="block dark:text-white text-black"
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection("#top");
@@ -233,7 +233,7 @@ const Navbar = () => {
               </a>
               <a
                 href="#"
-                className="block text-white"
+                className="block dark:text-white text-black"
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection("#info");
@@ -246,7 +246,7 @@ const Navbar = () => {
               </a>
               <a
                 href="#"
-                className="block text-white"
+                className="block dark:text-white text-black"
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection("#data");
@@ -259,9 +259,9 @@ const Navbar = () => {
               </a>
               <a
                 href="#"
-                className="block rounded-2xl text-white text-center py-2 border-solid border-2 border-[#F27360]"
+                className="block rounded-2xl dark:text-white text-black text-center py-2 border-solid border-2 border-[#F27360]"
                 type="button"
-                class="text-white font-medium rounded-lg text-sm px-4 py-2 text-center border-solid bg-transparent border-[#EF5239] border-2"
+                class="dark:text-white font-medium rounded-lg text-sm px-4 py-2 text-center border-solid bg-transparent border-[#EF5239] border-2"
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection("#contactt");
@@ -274,10 +274,10 @@ const Navbar = () => {
               </a>
               <button
                 onClick={toggleDarkMode}
-                className="relative w-10 h-10 p-2 mr-5 rounded-full bg-gray-200 dark:bg-gray-700 transition-all duration-300 flex items-center justify-center"
+                className="relative w-10 h-10 p-2 rounded-full transition-all duration-300 flex items-center justify-center [#EF5239]"
               >
                 <svg
-                  className={`w-6 h-6 absolute transition-opacity duration-150 ${
+                  className={`w-6 h-6 absolute transition-opacity duration-150 text-[#EF5239] ${
                     darkMode ? "opacity-0" : "opacity-100"
                   }`}
                   xmlns="http://www.w3.org/2000/svg"
@@ -298,7 +298,7 @@ const Navbar = () => {
 
                 {/* Moon Icon (for dark mode) */}
                 <svg
-                  className={`w-6 h-6 absolute transition-opacity duration-150 ${
+                  className={`w-6 h-6 absolute transition-opacity duration-150 text-[#EF5239] ${
                     darkMode ? "opacity-100" : "opacity-0"
                   }`}
                   xmlns="http://www.w3.org/2000/svg"

@@ -56,6 +56,8 @@ module.exports = {
         datashit: "linear-gradient(to bottom, #5A807C,#30453D)",
         top1: "linear-gradient(to right, #ffffff00, #ffffff10)",
         head1: "linear-gradient(to bottom, rgb(0,0,0), rgb(0,0,0,0.1))",
+        dehead1:
+          "linear-gradient(to bottom, rgb(255,255,255), rgb(255,255,255,0.1))",
         head2:
           "linear-gradient(to right, #5A807C, white, white, white, #EF5239)",
         darkhead2:
