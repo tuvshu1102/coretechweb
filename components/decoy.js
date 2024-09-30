@@ -116,7 +116,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="w-[90%] h-[32vh] rounded-lg bg-dembsix1 mt-[40px] md:hidden"
+        className="w-[90%] h-[32vh] rounded-lg bg-dembsix1 dark:bg-mbsix1  mt-[40px] md:hidden"
         data-aos="fade-up-left"
       >
         <div className="w-full h-[25%] text-2xl items-center flex pl-5 font-bold">
@@ -145,7 +145,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="w-[90%] h-[32vh] rounded-lg bg-dembsix2 mt-[40px] md:hidden"
+        className="w-[90%] h-[32vh] rounded-lg bg-dembsix2 dark:bg-mbsix1 mt-[40px] md:hidden"
         data-aos="fade-up-right"
       >
         <div className="w-full h-[25%] text-2xl items-center flex pl-5 font-bold">
@@ -174,7 +174,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="w-[90%] h-[32vh] rounded-lg bg-[#9B6C5F] mt-[40px] md:hidden"
+        className="w-[90%] h-[32vh] rounded-lg bg-[#9B6C5F] dark:bg-[#5f2921] mt-[40px] md:hidden"
         data-aos="fade-up-left"
       >
         <div className="w-full h-[25%] text-2xl items-center flex pl-5 font-bold">
@@ -203,7 +203,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="w-[90%] h-[32vh] rounded-lg bg-dembsix5 mt-[40px] md:hidden"
+        className="w-[90%] h-[32vh] rounded-lg bg-dembsix5 dark:bg-mbsix5 mt-[40px] md:hidden"
         data-aos="fade-up-right"
       >
         <div className="w-full h-[25%] text-2xl items-center flex pl-5 font-bold">
@@ -232,7 +232,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="w-[90%] h-[32vh] rounded-lg bg-dembsix6 mt-[40px] md:hidden "
+        className="w-[90%] h-[32vh] rounded-lg bg-dembsix6 dark:bg-mbsix6 mt-[40px] md:hidden "
         data-aos="fade-up-left"
       >
         <div className="w-full h-[25%] text-2xl items-center flex pl-5 font-bold">
