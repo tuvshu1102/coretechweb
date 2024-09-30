@@ -145,7 +145,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className="w-[90%] h-[32vh] rounded-lg bg-dembsix2 dark:bg-mbsix1 mt-[40px] md:hidden"
+        className="w-[90%] h-[32vh] rounded-lg bg-dembsix2 dark:bg-mbsix2 mt-[40px] md:hidden"
         data-aos="fade-up-right"
       >
         <div className="w-full h-[25%] text-2xl items-center flex pl-5 font-bold">
