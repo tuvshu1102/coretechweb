@@ -8,12 +8,12 @@ export default function Home() {
     >
       <div className="lg:h-[550px] h-[200px] w-full border-[#C68173] md:border-[5px] border-[2px] rounded-3xl md:mr-[-12vh] mr-[-2vh]">
         <div className=" text-transparent mt-6 ml-6">
-          <p className="uppercase bg-clip-text bg-info1 md:text-[38px] text-[19px] pr-[3vh] ">
+          <p className="uppercase bg-clip-text dark:bg-info1 md:text-[38px] text-[19px] pr-[3vh] bg-[#623E3E]">
             &quot;Coretech&quot; Компани нь Мэдээлэл технологийн чиглэлээр тэр
             дундаа дараах үндсэн чиглэлээр үйл ажиллагаа явуулдаг.
           </p>
         </div>
-        <ul className="list-disc pl-5 md:flex mt-10 text-white hidden">
+        <ul className="list-disc pl-5 md:flex mt-10 dark:text-white hidden text-[#333333]">
           <li className="ml-24 font-normal z-30">Big Data</li>
           <li className="ml-24 font-normal">AI Development</li>
           <li className="ml-24 font-normal">IOT Development</li>

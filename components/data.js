@@ -33,7 +33,7 @@ export default function Home() {
         <div className="h-[200px] w-[2px] bg-[#EF5941CC]"></div>
       </div>
       <div className="w-full h-[30%] mt-[-220px] z-10 md:flex justify-around hidden">
-        <div className="w-[27%] h-full bg-data2 rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
+        <div className="w-[27%] h-full dark:bg-data2 bg-[#5A807C] rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
           <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ export default function Home() {
             Data Lakehouse Warehouse
           </div>
         </div>
-        <div className="w-[27%] h-full bg-data2 rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
+        <div className="w-[27%] h-full dark:bg-data2 bg-[#5A807C] rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
           <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export default function Home() {
             Data Integration
           </div>
         </div>
-        <div className="w-[27%] h-full bg-data2 rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
+        <div className="w-[27%] h-full dark:bg-data2 bg-[#5A807C] rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
           <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -173,7 +173,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-[30%] z-10 hidden md:flex justify-around mt-[10vh]">
-        <div className="w-[27%] h-full bg-data2 rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
+        <div className="w-[27%] h-full dark:bg-data2 bg-[#5A807C] rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
           <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -218,7 +218,7 @@ export default function Home() {
             Data visualization
           </div>
         </div>
-        <div className="w-[27%] h-full bg-data2 rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
+        <div className="w-[27%] h-full dark:bg-data2 bg-[#5A807C] rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
           <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -263,7 +263,7 @@ export default function Home() {
             Data Analytics
           </div>
         </div>
-        <div className="w-[27%] h-full bg-data2 rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
+        <div className="w-[27%] h-full dark:bg-data2 bg-[#5A807C] rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
           <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -309,8 +309,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-[3px] h-[94px] bg-data3 block md:hidden mt-[-20px]"></div>
-      <div className="w-[90%] h-[175px] bg-data2 md:hidden rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
+      <div className="w-[3px] h-[94px] dark:bg-data3 bg-dedata3 block md:hidden mt-[-20px]"></div>
+      <div className="w-[90%] h-[175px] dark:bg-data2 bg-[#5A807C]  md:hidden rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
         <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -357,8 +357,8 @@ export default function Home() {
           Data Lakehouse Warehouse
         </div>
       </div>
-      <div className="w-[3px] h-[94px] bg-data3 block md:hidden "></div>
-      <div className="w-[90%] h-[175px] bg-data2 md:hidden rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
+      <div className="w-[3px] h-[94px] dark:bg-data3 bg-dedata3 block md:hidden "></div>
+      <div className="w-[90%] h-[175px] dark:bg-data2 bg-[#5A807C]  md:hidden rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
         <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -404,8 +404,8 @@ export default function Home() {
           Data Integration
         </div>
       </div>
-      <div className="w-[3px] h-[94px] bg-data3 block md:hidden "></div>
-      <div className="w-[90%] h-[175px] bg-data2 md:hidden rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
+      <div className="w-[3px] h-[94px] dark:bg-data3 bg-dedata3 block md:hidden "></div>
+      <div className="w-[90%] h-[175px] dark:bg-data2 bg-[#5A807C] md:hidden rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
         <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -450,8 +450,8 @@ export default function Home() {
           Data Pipeline
         </div>
       </div>
-      <div className="w-[3px] h-[94px] bg-data3 block md:hidden "></div>
-      <div className="w-[90%] h-[175px] bg-data2 md:hidden rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
+      <div className="w-[3px] h-[94px] dark:bg-data3 bg-dedata3 block md:hidden "></div>
+      <div className="w-[90%] h-[175px] dark:bg-data2 bg-[#5A807C]  md:hidden rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
         <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -496,8 +496,8 @@ export default function Home() {
           Data Visualization
         </div>
       </div>
-      <div className="w-[3px] h-[94px] bg-data3 block md:hidden "></div>
-      <div className="w-[90%] h-[175px] bg-data2 md:hidden rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
+      <div className="w-[3px] h-[94px] dark:bg-data3 bg-dedata3 block md:hidden "></div>
+      <div className="w-[90%] h-[175px] dark:bg-data2 bg-[#5A807C]  md:hidden rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
         <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -542,8 +542,8 @@ export default function Home() {
           Data Analytics
         </div>
       </div>
-      <div className="w-[3px] h-[94px] bg-data3 block md:hidden "></div>
-      <div className="w-[90%] h-[175px] bg-data2 md:hidden rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
+      <div className="w-[3px] h-[94px] dark:bg-data3 bg-dedata3 block md:hidden "></div>
+      <div className="w-[90%] h-[175px] dark:bg-data2 bg-[#5A807C]  md:hidden rounded-[24px] border-[#7C7E7E] font-normal border-[1px] flex items-center flex-col">
         <div className="h-[78px] w-[69px] bg-data1 rounded-full mt-[-39px] border-[#7C7E7E] border-[1px] flex justify-center items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"

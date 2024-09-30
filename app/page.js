@@ -4,6 +4,10 @@ import { Suspense } from "react";
 import { useState } from "react";
 import dynamic from "next/dynamic";
 
+const Decoy = dynamic(() => import("../components/decoy"), {
+  ssr: false,
+});
+
 const Data = dynamic(() => import("../components/data"), {
   ssr: false,
 });
@@ -56,7 +60,8 @@ export default function Home() {
         <Navbar />
         <Top id="top" />
         <Info id="info" />
-        <Six id="six" />
+        {/* <Six id="six" /> */}
+        <Decoy />
         <Quote />
         <Data id="data" />
         <Footer id="contact" />

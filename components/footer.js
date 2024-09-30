@@ -53,8 +53,8 @@ export default function Home() {
     }
   };
   return (
-    <div className="h-auto w-full overflow-hidden scroll-smooth">
-      <div className="md:h-[140px] h-[120px] w-full md:rotate-2 transform bg-[#5A807C] mt-[120px] relative z-30 overflow-hidden items-center flex">
+    <div className="h-auto w-full scroll-smooth bg-[#1A1A1A] mt-[240px] z-0">
+      <div className="md:h-[140px] h-[120px] w-[120%] md:rotate-2 transform bg-[#5A807C] mt-[-80px] relative z-30 overflow-hidden items-center flex">
         <div
           className="absolute w-[90px] h-[43px] md:w-[200px] md:h-[30px] left-full animate-scrollLeft hidden md:block"
           style={{ animationDelay: `calc(30s / 8 * (8 - 1) * -1)` }}

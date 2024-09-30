@@ -25,8 +25,8 @@ const ScrollEffectText = () => {
   }, []);
 
   return (
-    <div className="h-[60vh] flex flex-col items-center justify-center text-white space-y-[22px]">
-      <div className="rounded-full w-[74px] h-[43px] bg-quote2 border-[#3D4342] border-[1px] text-[#5A807C] flex justify-center items-center text-4xl font-serif mb-10">
+    <div className="h-[60vh] flex flex-col items-center justify-center dark:text-white space-y-[22px] text-[#333333]">
+      <div className="rounded-full w-[74px] h-[43px] bg-dequote2 dark:bg-quote2 dark:border-[#3D4342] border-[1px] text-[#5A807C] flex justify-center items-center text-4xl font-serif mb-10">
         <img src="/quotation.svg" />
       </div>
       <motion.p
