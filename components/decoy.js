@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import six1 from "@/components/six1.json";
@@ -26,7 +24,7 @@ export default function Home() {
           </p>
         </div>
         <div className="w-[40%] h-full overflow-hidden flex items-center">
-          <Image
+          <img
             alt="coretech"
             src="/dcube.svg"
             width="800"
@@ -36,7 +34,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-[31%] hidden md:flex justify-between mb-[30px]">
-        <div className="w-[58%] h-full rounded-[25px] dark:bg-[#151515] flex bg-[#5A807C]">
+        <div className="w-[58%] h-full rounded-[25px] dark:bg-[#151515] flex bg-[#5A807C] items-center">
           <div className="w-[60%] h-full font-normal pl-16 pt-10">
             <p className="text-[32px] w-4/5 font-semibold">System Dev</p>
             <p className="text-[16px] w-4/5 mt-6">
@@ -45,17 +43,11 @@ export default function Home() {
               elementum amet venenatis volutpat.
             </p>
           </div>
-          <div className="w-[40%] h-full flex justify-end items-center overflow-hidden">
-            <Image
-              alt="coretech"
-              src="/dsystemdev.svg"
-              width="300"
-              height="300"
-              className=""
-            />
+          <div className="w-[40%] h-[90%] flex justify-end items-center overflow-hidden">
+            <img alt="coretech" src="/dsystemdev.svg" className="h-[270px]" />
           </div>
         </div>
-        <div className="w-[40%] h-full rounded-[25px] dark:bg-six2 flex bg-desix2">
+        <div className="w-[40%] h-full rounded-[25px] dark:bg-six2 flex bg-desix2 items-center">
           <div className="w-[60%] h-full font-normal pl-16 pt-10">
             <p className="text-[32px] w-4/5 font-semibold">IoT</p>
             <p className="text-[16px] w-4/5 mt-6">
@@ -64,14 +56,8 @@ export default function Home() {
               elementum amet venenatis volutpat.
             </p>
           </div>
-          <div className="w-[40%] h-full flex justify-end items-center overflow-hidden">
-            <Image
-              alt="coretech"
-              src="/diot.svg"
-              width="200"
-              height="200"
-              className=""
-            />
+          <div className="w-[40%] h-[90%] flex justify-end items-center overflow-hidden">
+            <img alt="coretech" src="/diot.svg" className="h-[250px]" />
           </div>
         </div>
       </div>
@@ -86,12 +72,10 @@ export default function Home() {
             </p>
           </div>
           <div className="w-[40%] h-full flex justify-center items-center overflow-hidden relative">
-            <Image
+            <img
               alt="coretech"
               src="/dai.svg"
-              width="400"
-              height="400"
-              className="absolute bottom-0"
+              className="absolute bottom-0 h-[250px] right-0"
             />
           </div>
         </div>
@@ -105,12 +89,12 @@ export default function Home() {
             </p>
           </div>
           <div className="w-[55%] h-full flex justify-center items-center overflow-hidden relative">
-            <Image
+            <img
               alt="coretech"
               src="/ddevops.svg"
               width="300"
               height="300"
-              className="absolute right-0 "
+              className="absolute right-0 h-[250px] bottom-0"
             />
           </div>
         </div>
@@ -132,8 +116,8 @@ export default function Home() {
               in elementum amet venenatis volutpat. Amet urna purus gravida sit
               mattis egestas felis quam.
             </p>
-            <div className="w-[150px] h-full flex justify-end items-end pr-5 pb-5">
-              <Image
+            <div className="w-[150px] h-full flex justify-end items-end">
+              <img
                 alt="coretech"
                 src="/cube.svg"
                 width="150"
@@ -148,7 +132,7 @@ export default function Home() {
         className="w-[90%] h-[32vh] rounded-lg bg-dembsix2 dark:bg-mbsix2 mt-[40px] md:hidden"
         data-aos="fade-up-right"
       >
-        <div className="w-full h-[25%] text-2xl items-center flex pl-5 font-bold">
+        <div className="w-full h-[25%] text-2xl items-center flex font-bold">
           System Dev
         </div>
         <div className="w-full h-[75%]  relative">
@@ -161,8 +145,8 @@ export default function Home() {
               in elementum amet venenatis volutpat. Amet urna purus gravida sit
               mattis egestas felis quam.
             </p>
-            <div className="w-[150px] h-full flex justify-end items-end pr-5 pb-5">
-              <Image
+            <div className="w-[150px] h-full flex justify-end items-end">
+              <img
                 alt="coretech"
                 src="/systemdev.svg"
                 width="150"
@@ -190,8 +174,8 @@ export default function Home() {
               in elementum amet venenatis volutpat. Amet urna purus gravida sit
               mattis egestas felis quam.
             </p>
-            <div className="w-[150px] h-full flex justify-end items-end pr-5">
-              <Image
+            <div className="w-[150px] h-full flex justify-end items-end">
+              <img
                 alt="coretech"
                 src="/mai.svg"
                 width="300"
@@ -219,8 +203,8 @@ export default function Home() {
               in elementum amet venenatis volutpat. Amet urna purus gravida sit
               mattis egestas felis quam.
             </p>
-            <div className="w-[150px] h-full flex justify-end items-end pr-5 pb-5">
-              <Image
+            <div className="w-[150px] h-full flex justify-end items-end">
+              <img
                 alt="coretech"
                 src="/iot.svg"
                 width="150"
@@ -248,8 +232,8 @@ export default function Home() {
               in elementum amet venenatis volutpat. Amet urna purus gravida sit
               mattis egestas felis quam.
             </p>
-            <div className="w-[150px] h-full flex justify-end items-end pr-5 pb-5">
-              <Image
+            <div className="w-[150px] h-full flex justify-end items-end">
+              <img
                 alt="coretech"
                 src="/mdevops.svg"
                 width="150"
