@@ -55,7 +55,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-[40%] h-[90%] flex justify-end items-center overflow-hidden">
-            <img alt="coretech" src="/diot.svg" className="h-[250px]" />
+            <img alt="coretech" src="/six3.png" className="h-[250px]" />
           </div>
         </div>
       </div>
@@ -200,7 +200,7 @@ export default function Home() {
             <div className="w-[150px] h-full flex justify-end items-end">
               <img
                 alt="coretech"
-                src="/iot.svg"
+                src="/six3.png"
                 width="150"
                 height="150"
                 className="h-[10vh] w-[10vh]"
