@@ -23,14 +23,12 @@ export default function Home() {
             eget commodo vulputate ac mauris purus dictum platea pulvinar.
           </p>
         </div>
-        <div className="w-[40%] h-full overflow-hidden flex items-center">
-          <img
-            alt="coretech"
-            src="/dcube.svg"
-            width="800"
-            height="800"
-            className=""
-          />
+        <div className="flex justify-center items-center h-full w-[25%] mr-[-5vh]">
+          <img src="/cube.svg" className="h-[250px]" />
+        </div>
+        <div className="flex justify-center items-start flex-col overflow-hidden">
+          <img src="/cube.svg" className="h-[300px] mb-10" />
+          <img src="/cube.svg" className="h-[300px]" />
         </div>
       </div>
       <div className="w-full h-[31%] hidden md:flex justify-between mb-[30px]">
@@ -72,11 +70,7 @@ export default function Home() {
             </p>
           </div>
           <div className="w-[40%] h-full flex justify-center items-center overflow-hidden relative">
-            <img
-              alt="coretech"
-              src="/dai.svg"
-              className="absolute bottom-0 h-[250px] right-0"
-            />
+            <img alt="coretech" src="/dai.svg" className=" h-[250px]" />
           </div>
         </div>
         <div className="w-[58%] h-full rounded-[25px] dark:bg-six4 flex bg-desix4">
@@ -88,13 +82,13 @@ export default function Home() {
               elementum amet venenatis volutpat.
             </p>
           </div>
-          <div className="w-[55%] h-full flex justify-center items-center overflow-hidden relative">
+          <div className="w-[55%] h-full flex justify-end items-center overflow-hidden">
             <img
               alt="coretech"
               src="/ddevops.svg"
               width="300"
               height="300"
-              className="absolute right-0 h-[250px] bottom-0"
+              className=" h-[250px]"
             />
           </div>
         </div>
