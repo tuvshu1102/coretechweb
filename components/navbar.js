@@ -259,9 +259,9 @@ const Navbar = () => {
               </a>
               <a
                 href="#"
-                className="block rounded-2xl dark:text-white text-black text-center py-2 border-solid border-2 border-[#F27360]"
+                className="block rounded-2xl text-center py-2 border-solid border-2 border-[#F27360]"
                 type="button"
-                class="dark:text-white font-medium rounded-lg text-sm px-4 py-2 text-center border-solid bg-transparent border-[#EF5239] border-2"
+                class="dark:text-white text-black font-medium rounded-lg text-sm px-4 py-2 text-center border-solid bg-transparent border-[#EF5239] border-2"
                 onClick={(e) => {
                   e.preventDefault();
                   scrollToSection("#contactt");
@@ -274,7 +274,7 @@ const Navbar = () => {
               </a>
               <button
                 onClick={toggleDarkMode}
-                className="relative w-10 h-10 p-2 rounded-full transition-all duration-300 flex items-center justify-center [#EF5239]"
+                className="relative w-10 h-10 p-2 rounded-full transition-all duration-300 flex items-center justify-center"
               >
                 <svg
                   className={`w-6 h-6 absolute transition-opacity duration-150 text-[#EF5239] ${
