@@ -28,6 +28,7 @@ const ScrollEffectText = () => {
     <div className="h-[60vh] flex flex-col items-center justify-center dark:text-white space-y-[52px] text-[#333333] my-[10vh]">
       <div className="rounded-full w-[74px] h-[43px] bg-dequote2 dark:bg-quote2 dark:border-[#3D4342] border-[1px] text-[#5A807C] flex justify-center items-center text-4xl font-serif mb-10">
         <img src="/quotation.svg" />
+        <p className="hidden">©tuvshu</p>
       </div>
       <motion.p
         ref={(el) => (pRefs.current[0] = el)}
