@@ -6,6 +6,13 @@ import "./globals.css";
 import "aos/dist/aos.css"; // Import AOS styles
 import AOS from "aos";
 const inter = Inter({ subsets: ["latin"] });
+let title = "ДАТА";
+let description = "";
+
+export const metadata = {
+  title,
+  description,
+};
 
 export default function RootLayout({ children }) {
   useEffect(() => {
