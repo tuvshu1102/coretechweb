@@ -6,14 +6,10 @@ import "./globals.css";
 import "aos/dist/aos.css"; // Import AOS styles
 import AOS from "aos";
 const inter = Inter({ subsets: ["latin"] });
-let title = "ДАТА";
-let description = "";
-
 export const metadata = {
-  title,
-  description,
+  title: "CoreTech",
+  description: "Created by coretech",
 };
-
 export default function RootLayout({ children }) {
   useEffect(() => {
     AOS.init({
@@ -24,6 +20,9 @@ export default function RootLayout({ children }) {
   const [state, setState] = useState("");
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/tablogo.svg" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );
